@@ -1,0 +1,10 @@
+C:\Users\Levente\Desktop\gta 5 coding\Sagittarius-Trainer\Sagittarius-Trainer\bin\Debug\Sagittarius-Trainer.dll
+C:\Users\Levente\Desktop\gta 5 coding\Sagittarius-Trainer\Sagittarius-Trainer\bin\Debug\Sagittarius-Trainer.pdb
+C:\Users\Levente\Desktop\gta 5 coding\Sagittarius-Trainer\Sagittarius-Trainer\bin\Debug\LemonUI.SHVDN3.dll
+C:\Users\Levente\Desktop\gta 5 coding\Sagittarius-Trainer\Sagittarius-Trainer\bin\Debug\ScriptHookVDotNet3.dll
+C:\Users\Levente\Desktop\gta 5 coding\Sagittarius-Trainer\Sagittarius-Trainer\bin\Debug\ScriptHookVDotNet3.xml
+C:\Users\Levente\Desktop\gta 5 coding\Sagittarius-Trainer\Sagittarius-Trainer\obj\Debug\Sagittarius-Trainer.csproj.AssemblyReference.cache
+C:\Users\Levente\Desktop\gta 5 coding\Sagittarius-Trainer\Sagittarius-Trainer\obj\Debug\Sagittarius-Trainer.csproj.CoreCompileInputs.cache
+C:\Users\Levente\Desktop\gta 5 coding\Sagittarius-Trainer\Sagittarius-Trainer\obj\Debug\Sagittarius-Trainer.csproj.CopyComplete
+C:\Users\Levente\Desktop\gta 5 coding\Sagittarius-Trainer\Sagittarius-Trainer\obj\Debug\Sagittarius-Trainer.dll
+C:\Users\Levente\Desktop\gta 5 coding\Sagittarius-Trainer\Sagittarius-Trainer\obj\Debug\Sagittarius-Trainer.pdb

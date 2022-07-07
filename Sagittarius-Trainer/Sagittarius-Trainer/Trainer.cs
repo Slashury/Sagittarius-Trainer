@@ -17,6 +17,7 @@ public class Main : Script
     NativeItem resetwantedlevel;
     NativeCheckboxItem playergodmode;
     NativeMenu vehicleOptions;
+    NativeMenu miscOptions;
     NativeItem vehiclerepair;
     NativeMenu weaponOptions;
     NativeCheckboxItem infiniteammo;
@@ -59,6 +60,10 @@ public class Main : Script
         teleportOptions = new NativeMenu("Teleport Options", "Teleport Options");
         pool.Add(teleportOptions);
         menu.AddSubMenu(teleportOptions);
+
+        miscOptions = new NativeMenu("Misc Options", "Misc Options");
+        pool.Add(miscOptions);
+        menu.AddSubMenu(miscOptions);
         
 
         PlayerFunctions(); 

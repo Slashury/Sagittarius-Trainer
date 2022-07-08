@@ -171,26 +171,14 @@ public class Main : Script
     {
         playeraddcash = new NativeItem("Add Cash");
         playerOptions.Add(playeraddcash);
-        playerOptions.ItemActivated += (sender, e) =>
-        {
-            if(e.Item == playeraddcash)
-            {
-                Game.Player.Money += 100000;
-                Screen.ShowSubtitle("100000$ has been added!");
-            }
-        };
+        playeraddcash.Activated += (_, _) => Game.Player.Money +=100000; Screen.ShowSubtitle("100000$ has been added!");
+
+
 
         playerremovecash = new NativeItem("Remove Cash");
         playerOptions.Add(playerremovecash);
 
-        playerOptions.ItemActivated += (sender, e) =>
-        {
-            if(e.Item == playerremovecash)
-            {
-                Game.Player.Money -= 100000;
-                Screen.ShowSubtitle("100000$ has been removed!");
-            }
-        };
+        playerremovecash.ItemActivated += (_, _) => Game.Player.Money -=100000; Screen.ShowSubtitle("100000$ has been removed!");
     }
 
     void NeverWanted()

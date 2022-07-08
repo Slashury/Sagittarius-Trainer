@@ -29,6 +29,7 @@ public class Main : Script
     NativeItem giveallweapons;
     NativeMenu teleportOptions;
     NativeItem teleportforward;
+    NativeItem cleanped;
 
     public Main()
     {

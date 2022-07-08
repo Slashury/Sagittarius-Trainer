@@ -90,14 +90,7 @@ public class Main : Script
     void CleanPed(){
         cleanped = new NativeItem("Clean Ped");
         playerOptions.Add(cleanped);
-        playerOptions.ItemActivated += (sender, e) =>
-        {
-            if(e.Item == cleanped){
-                Ped Player;
-                Player = Game.Player.Character;
-                Function.Call<bool>(Hash.CLEAR_PED_BLOOD_DAMAGE, Player);
-            }
-        }
+        cleanPed.Activated += (_, _) => Game.Player.Character.ClearBloodDamage();
     }
 
     void TeleportForwar()

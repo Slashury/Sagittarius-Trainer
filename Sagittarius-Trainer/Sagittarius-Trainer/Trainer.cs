@@ -171,16 +171,20 @@ public class Main : Script
     {
         playeraddcash = new NativeItem("Add Cash");
         playerOptions.Add(playeraddcash);
-        playeraddcash.Activated += (_, _) => Game.Player.Money +=100000; Screen.ShowSubtitle("100000$ has been added!");
-
-
+        playeraddcash.Activated += (_, _) => 
+        {
+        Game.Player.Money +=100000; 
+        Screen.ShowSubtitle("100000$ has been added!");
+        }   
 
         playerremovecash = new NativeItem("Remove Cash");
         playerOptions.Add(playerremovecash);
-
-        playerremovecash.ItemActivated += (_, _) => Game.Player.Money -=100000; Screen.ShowSubtitle("100000$ has been removed!");
+        playerremovecash.Activated += (_, _) => 
+        {        
+            Game.Player.Money -=100000; 
+            Screen.ShowSubtitle("100000$ has been removed!");
+        }
     }
-
     void NeverWanted()
     {
         neverwanted = new NativeCheckboxItem("Never Wanted", "Do you wish to enable Never Wanted?");

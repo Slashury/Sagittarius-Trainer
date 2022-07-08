@@ -83,8 +83,22 @@ public class Main : Script
         GiveMaxAmmo();
         GiveAllWeapons();
         TeleportForwar();
+        CleanPed();
 
     }
+    void CleanPed(){
+        cleanped = new NativeItem("Clean Ped");
+        playerOptions.Add(cleanped);
+        playerOptions.ItemActivated += (sender, e) =>
+        {
+            if(e.Item == cleanped){
+                Ped Player;
+                Player = Game.Player.Character;
+                Function.Call<bool>(Hash.CLEAR_PED_BLOOD_DAMAGE, Player);
+            }
+        }
+    }
+
     void TeleportForwar()
     {
         teleportforward = new NativeItem("Teleport Forward");
@@ -236,6 +250,7 @@ public class Main : Script
                 Vehicle car = Game.Player.Character.CurrentVehicle;
                 car.IsInvincible = checked_;
                 car.Repair();
+                
                 Function.Call<bool>(Hash.SET_ENTITY_PROOFS, car, checked_, checked_, checked_, checked_, checked_, checked_);
                 Function.Call<bool>(Hash.SET_ENTITY_CAN_BE_DAMAGED, car, checked_);
                 Screen.ShowSubtitle(checked_ ? "~b~Vehicle Godmode~w~ has been enabled!" : "~b~Vehicle Godmode~w~ has been disabled!");
